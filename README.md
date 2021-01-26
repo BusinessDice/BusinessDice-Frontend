@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * `ng serve --open` for a dev server at http://localhost:4200/
   * `--open` launches the page in the browser
 * `ng generate component component-name` to generate a new component (html, css, ts) -> presenting objects
-* `ng generate service service-name` to generate a new service (ts) -> delegates/injects data
+* `ng generate service folder/service-name` to generate a new service (ts) -> delegates/injects data
 * `ng generate module app-routing --flat --module=app` to generate
   * `--flat` puts the file in src/app instead of its own folder
   * `--module=app` tells the CLI to register it in the imports array of the AppModule.
