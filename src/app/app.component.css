@@ -1,4 +1,19 @@
+mat-toolbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  height: 64px;
+  width: 100%;
+  overflow: hidden;
+}
+
 .nav-item {
   float: right;
   margin-left: auto;
+}
+
+#router-container {
+  position: fixed;
+  bottom: 0;
+  height: calc(100% - 64px);
+  width: 100%;
 }

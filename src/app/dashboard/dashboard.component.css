@@ -1,0 +1,22 @@
+#left-half {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+#right-half {
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.center-button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  height: 64px;
+  width: 200px;
+  border: 2px solid gray;
+}

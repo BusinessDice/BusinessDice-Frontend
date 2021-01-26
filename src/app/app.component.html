@@ -1,22 +1,18 @@
 <mat-toolbar>
-  <button aria-label="Example icon-button with menu icon" class="example-icon" mat-icon-button>
+  <button mat-icon-button>
     <mat-icon>menu</mat-icon>
   </button>
-  <div>
-    <h1>{{ title }}</h1>
-  </div>
-  <div class="nav-item">
-    <button mat-raised-button>
-      <a routerLink="/dashboard">Dashboard</a>
-    </button>
-  </div>
-  <div class="nav-item-forwarding">
-    <button mat-raised-button>
-      <a href="https://github.com/BusinessDice">GitHub</a>
-    </button>
-  </div>
+  <h1>{{ title }}</h1>
+  <button class="nav-item" mat-raised-button>
+    <a routerLink="/dashboard">Dashboard</a>
+  </button>
+  <button class="nav-item-forwarding" mat-raised-button>
+    <a href="https://github.com/BusinessDice">GitHub</a>
+  </button>
 </mat-toolbar>
 
-<router-outlet></router-outlet>
+<div id="router-container">
+  <router-outlet></router-outlet>
+</div>
 
 <app-console></app-console>
