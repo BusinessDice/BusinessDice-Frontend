@@ -14,9 +14,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   * `--module=app` tells the CLI to register it in the imports array of the AppModule.
 * `ng generate directive|pipe|class|guard|interface|enum|module` to generate other content
 
-## Simulate data server
+## Angular Materials
 
-Run `npm install angular-in-memory-web-api --save` to use the InMemoryDataService.
+* https://material.angular.io/components/categories
+* `ng add @angular/material` to add the package
 
 ## Get latest angular version:
 
