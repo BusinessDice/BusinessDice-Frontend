@@ -5,6 +5,16 @@ import {Injectable} from '@angular/core';
 })
 export class ConsoleService {
 
+  messages: string[] = [];
+
   constructor() {
+  }
+
+  add(message: string): void {
+    this.messages.push(message);
+  }
+
+  clear(): void {
+    this.messages = [];
   }
 }
