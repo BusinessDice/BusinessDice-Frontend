@@ -1,1 +1,9 @@
-<p>console works!</p>
+<div *ngIf="consoleService.messages.length">
+
+  <h2>Console</h2>
+  <button (click)="consoleService.clear()"
+          class="clear">clear
+  </button>
+  <div *ngFor='let message of consoleService.messages'> {{message}} </div>
+
+</div>
