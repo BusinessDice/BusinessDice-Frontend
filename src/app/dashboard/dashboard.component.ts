@@ -15,7 +15,8 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public openDialog(): void {
+  /*TODO use showCreate Game throw the dialog*/
+  public openDialog(showCreateGame: boolean): void {
     const dialogRef = this.dialog.open(DashboardDialogComponent);
 
     dialogRef.afterClosed().subscribe(result => {

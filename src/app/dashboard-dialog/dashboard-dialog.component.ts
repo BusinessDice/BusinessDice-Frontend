@@ -15,7 +15,10 @@ export class DashboardDialogComponent implements OnInit {
     projects: new Map<string, boolean>(),
     businesses: new Map<string, number>()
   };
-  game: Game | undefined;
+  game: Game = {
+    name: 'game123',
+    password: 'password123'
+  };
 
   constructor() {
   }

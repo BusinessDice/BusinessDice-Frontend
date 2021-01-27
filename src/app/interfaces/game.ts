@@ -1,4 +1,4 @@
 export interface Game {
   name: string;
-  password: number;
+  password: string;
 }
