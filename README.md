@@ -1,3 +1,5 @@
+![CodeQL](https://github.com/BusinessDice/BusinessDice-Frontend/workflows/CodeQL/badge.svg)
+
 # BusinessDice – Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
