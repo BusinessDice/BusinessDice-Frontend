@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Game Preparation</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Create Player</h3>
+  <div>
+    <label>name:
+      <input [(ngModel)]="player.name" placeholder="name"/>
+    </label>
+  </div>
+  <h3>Select Game</h3>
+  <div>
+    <label>name:
+      <input [(ngModel)]="game.name" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="game.password" placeholder="name"/>
+    </label>
+  </div>
+  <h3>Incredible tooling</h3>
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button [mat-dialog-close]="true" cdkFocusInitial mat-button>Install</button>
+</mat-dialog-actions>

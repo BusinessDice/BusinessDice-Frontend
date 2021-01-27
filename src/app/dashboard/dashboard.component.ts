@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import {DashboardDialogComponent} from '../dashboard-dialog/dashboard-dialog.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,10 +9,17 @@ import {Component, OnInit} from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
   }
 
   ngOnInit(): void {
   }
 
+  public openDialog(): void {
+    const dialogRef = this.dialog.open(DashboardDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }
