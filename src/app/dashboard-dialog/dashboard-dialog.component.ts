@@ -17,9 +17,11 @@ export class DashboardDialogComponent implements OnInit {
   };
   game: Game = {
     name: 'game123',
-    password: 'password123'
+    password: 'password123',
+    size: 2
   };
 
+  /* TODO use somehow the gameControllerService */
   constructor() {
   }
 

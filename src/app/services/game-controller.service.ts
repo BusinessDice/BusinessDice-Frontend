@@ -2,6 +2,8 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ConsoleService} from './console.service';
 import {Observable, of} from 'rxjs';
+import {Game} from '../interfaces/game';
+import {Player} from '../interfaces/player';
 
 @Injectable({
   /* is provided in any class */
@@ -15,6 +17,10 @@ export class GameControllerService {
   constructor(
     private http: HttpClient,
     private console: ConsoleService) {
+  }
+
+  public joinGame(player: Player, game: Game): void {
+
   }
 
   /**
